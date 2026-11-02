@@ -437,9 +437,9 @@
             "uid": "prometheus"
           },
           "editorMode": "code",
-          "expr": "sum by (handler, status) (rate(cloudpulse_http_requests_total[1m])) or rate(cloudpulse_http_requests_total[1m])",
+          "expr": "sum by (endpoint, status) (rate(cloudpulse_http_requests_total[1m])) or rate(cloudpulse_http_requests_total[1m])",
           "instant": false,
-          "legendFormat": "{{handler}} - HTTP {{status}}",
+          "legendFormat": "{{endpoint}} - HTTP {{status}}",
           "range": true,
           "refId": "A"
         }
