@@ -2,7 +2,7 @@
 
 **End-to-end cloud infrastructure that takes a verified container image and wraps it in a production-grade AWS network, automated Kubernetes delivery, self-healing workloads, and real-time incident observability.**
 
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-IaC_CI-2088FF?logo=githubactions&logoColor=white)
+[![IaC & GitOps CI](https://github.com/mohammedarmaan936-sketch/cloudpulse-eks-gitops-infra/actions/workflows/iac-gitops-ci.yml/badge.svg)](https://github.com/mohammedarmaan936-sketch/cloudpulse-eks-gitops-infra/actions/workflows/iac-gitops-ci.yml)
 ![Terraform](https://img.shields.io/badge/Terraform-v1.9-844FBA?logo=terraform&logoColor=white)
 ![AWS EKS](https://img.shields.io/badge/AWS_EKS-v1.31-FF9900?logo=amazoneks&logoColor=white)
 ![AWS VPC](https://img.shields.io/badge/AWS_VPC-10.0.0.0/16-232F3E?logo=amazonwebservices&logoColor=white)
@@ -17,7 +17,7 @@
 > ### 🔗 This Project Has Two Repositories
 >
 > **Part 1 → [`cloudpulse-devsecops-service`](https://github.com/mohammedarmaan936-sketch/cloudpulse-devsecops-service)**
-> The FastAPI telemetry & chaos microservice. Multistage Docker hardening, DevSecOps CI pipeline (Trivy, Grype, Hadolint), and the verified container image published to `ghcr.io`.
+> The FastAPI telemetry & chaos microservice. Multistage Docker hardening, DevSecOps CI pipeline (Ruff, Pytest, Gitleaks, Trivy), and the verified container image published to `ghcr.io`.
 >
 > **Part 2 → This Repo — `cloudpulse-eks-gitops-infra`**
 > Modular AWS VPC & EKS Terraform IaC, Kustomize Kubernetes manifests with HPA auto-scaling, Argo CD GitOps continuous delivery, and Prometheus/Grafana observability. Everything needed to take that verified container and run it in production.
