@@ -6,3 +6,4 @@ metadata:
     name: cloudpulse
     app.kubernetes.io/name: cloudpulse
     app.kubernetes.io/part-of: cloudpulse-stack
+

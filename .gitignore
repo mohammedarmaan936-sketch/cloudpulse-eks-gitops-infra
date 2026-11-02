@@ -21,3 +21,4 @@ node_modules/
 
 # Do NOT ignore docs/screenshots
 !docs/screenshots/*.png
+
