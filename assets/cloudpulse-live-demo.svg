@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 530" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 550" width="100%" height="100%">
   <defs>
     <!-- Background and Card Gradients -->
     <linearGradient id="winBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -22,7 +22,7 @@
       <stop offset="100%" stop-color="#58a6ff" />
     </linearGradient>
     <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35" />
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.32" />
       <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.0" />
     </linearGradient>
     <filter id="winShadow" x="-5%" y="-5%" width="110%" height="110%">
@@ -31,17 +31,17 @@
   </defs>
 
   <style>
-    /* Senior-Level Large Typography Scale */
-    .win-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15.5px; font-weight: 700; fill: #c9d1d9; }
-    .tab-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; }
-    .heading { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 23px; font-weight: 800; fill: #ffffff; letter-spacing: -0.2px; }
-    .subheading { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15.5px; font-weight: 500; fill: #c9d1d9; }
-    .code-xl { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 17px; font-weight: 700; }
-    .code-lg { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 15.5px; font-weight: 700; }
-    .code-md { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 14.5px; font-weight: 600; }
-    .stat-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 0.6px; fill: #8b949e; text-transform: uppercase; }
-    .stat-val { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 32px; font-weight: 800; }
-    .footer-note { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14.5px; font-weight: 600; fill: #8b949e; }
+    /* Balanced, High-Legibility Typography with Zero Overflow */
+    .win-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; font-weight: 700; fill: #c9d1d9; }
+    .tab-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 700; }
+    .heading { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 18px; font-weight: 800; fill: #ffffff; letter-spacing: -0.2px; }
+    .subheading { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 500; fill: #8b949e; }
+    .code-bold { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13.5px; font-weight: 700; }
+    .code-md { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; font-weight: 600; }
+    .code-sm { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; }
+    .stat-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; font-weight: 800; letter-spacing: 0.6px; fill: #8b949e; text-transform: uppercase; }
+    .stat-val { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 24px; font-weight: 800; }
+    .footer-note { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 500; fill: #8b949e; }
 
     /* Pure Opacity Frame Animation Loop (12s total: 3s per step, NO translateY) */
     @keyframes frame1Fade {
@@ -65,15 +65,15 @@
     }
 
     /* Tab Border Glow Sync */
-    @keyframes tab1Glow { 0%, 22% { stroke: #388bfd; stroke-width: 2.2; } 24%, 100% { stroke: #30363d; stroke-width: 1; } }
-    @keyframes tab2Glow { 0%, 23% { stroke: #30363d; stroke-width: 1; } 25%, 47% { stroke: #2ea043; stroke-width: 2.2; } 49%, 100% { stroke: #30363d; stroke-width: 1; } }
-    @keyframes tab3Glow { 0%, 48% { stroke: #30363d; stroke-width: 1; } 50%, 72% { stroke: #f0883e; stroke-width: 2.2; } 74%, 100% { stroke: #30363d; stroke-width: 1; } }
-    @keyframes tab4Glow { 0%, 73% { stroke: #30363d; stroke-width: 1; } 75%, 97% { stroke: #bc8cff; stroke-width: 2.2; } 99%, 100% { stroke: #30363d; stroke-width: 1; } }
+    @keyframes tab1Glow { 0%, 22% { stroke: #388bfd; stroke-width: 2; } 24%, 100% { stroke: #30363d; stroke-width: 1; } }
+    @keyframes tab2Glow { 0%, 23% { stroke: #30363d; stroke-width: 1; } 25%, 47% { stroke: #2ea043; stroke-width: 2; } 49%, 100% { stroke: #30363d; stroke-width: 1; } }
+    @keyframes tab3Glow { 0%, 48% { stroke: #30363d; stroke-width: 1; } 50%, 72% { stroke: #f0883e; stroke-width: 2; } 74%, 100% { stroke: #30363d; stroke-width: 1; } }
+    @keyframes tab4Glow { 0%, 73% { stroke: #30363d; stroke-width: 1; } 75%, 97% { stroke: #bc8cff; stroke-width: 2; } 99%, 100% { stroke: #30363d; stroke-width: 1; } }
 
     /* Continuous Timeline Progress Bar */
     @keyframes progressTrack {
       0% { width: 0px; }
-      100% { width: 832px; }
+      100% { width: 900px; }
     }
 
     /* Live Blinking Dot */
@@ -95,44 +95,44 @@
   </style>
 
   <!-- Outer Window Shell -->
-  <rect x="6" y="6" width="868" height="518" rx="14" fill="url(#winBg)" stroke="#30363d" stroke-width="1.5" filter="url(#winShadow)" />
+  <rect x="10" y="8" width="940" height="534" rx="12" fill="url(#winBg)" stroke="#30363d" stroke-width="1.5" filter="url(#winShadow)" />
 
   <!-- Window Header Bar -->
-  <rect x="6" y="6" width="868" height="38" rx="14" fill="url(#headerGrad)" />
-  <rect x="6" y="34" width="868" height="10" fill="url(#headerGrad)" />
-  <line x1="6" y1="44" x2="874" y2="44" stroke="#21262d" stroke-width="1" />
+  <rect x="10" y="8" width="940" height="38" rx="12" fill="url(#headerGrad)" />
+  <rect x="10" y="34" width="940" height="12" fill="url(#headerGrad)" />
+  <line x1="10" y1="46" x2="950" y2="46" stroke="#21262d" stroke-width="1" />
 
   <!-- Window Controls -->
-  <circle cx="28" cy="25" r="6" fill="#ff5f56" />
-  <circle cx="47" cy="25" r="6" fill="#ffbd2e" />
-  <circle cx="66" cy="25" r="6" fill="#27c93f" />
+  <circle cx="32" cy="27" r="5.5" fill="#ff5f56" />
+  <circle cx="50" cy="27" r="5.5" fill="#ffbd2e" />
+  <circle cx="68" cy="27" r="5.5" fill="#27c93f" />
 
-  <text x="440" y="30" text-anchor="middle" class="win-title">⚡ CloudPulse Platform • GitOps, FinOps &amp; Telemetry Lifecycle</text>
-  <circle cx="848" cy="25" r="5" fill="#3fb950" class="live-dot" />
-  <text x="837" y="30" text-anchor="end" class="code-xl" fill="#3fb950" font-size="13">LIVE</text>
+  <text x="480" y="32" text-anchor="middle" class="win-title">⚡ CloudPulse Platform • GitOps, FinOps &amp; Telemetry Lifecycle</text>
+  <circle cx="918" cy="26" r="4.5" fill="#3fb950" class="live-dot" />
+  <text x="908" y="31" text-anchor="end" class="code-bold" fill="#3fb950" font-size="12">LIVE</text>
 
-  <!-- Step Navigation Pills (Tabs - Large & Clear) -->
-  <g transform="translate(24, 52)">
+  <!-- Step Navigation Pills (Tabs) -->
+  <g transform="translate(30, 54)">
     <!-- Tab 1 -->
-    <rect x="0" y="0" width="196" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-1-box" />
-    <text x="98" y="22" text-anchor="middle" class="tab-text" fill="#ffffff">1. CI/CD &amp; FinOps</text>
+    <rect x="0" y="0" width="216" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-1-box" />
+    <text x="108" y="21" text-anchor="middle" class="tab-text" fill="#ffffff">1. CI/CD &amp; FinOps Gate</text>
 
     <!-- Tab 2 -->
-    <rect x="212" y="0" width="196" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-2-box" />
-    <text x="310" y="22" text-anchor="middle" class="tab-text" fill="#ffffff">2. Argo CD GitOps</text>
+    <rect x="228" y="0" width="216" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-2-box" />
+    <text x="336" y="21" text-anchor="middle" class="tab-text" fill="#ffffff">2. Argo CD GitOps</text>
 
     <!-- Tab 3 -->
-    <rect x="424" y="0" width="196" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-3-box" />
-    <text x="522" y="22" text-anchor="middle" class="tab-text" fill="#ffffff">3. K8s HPA Scaling</text>
+    <rect x="456" y="0" width="216" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-3-box" />
+    <text x="564" y="21" text-anchor="middle" class="tab-text" fill="#ffffff">3. K8s HPA Scaling</text>
 
     <!-- Tab 4 -->
-    <rect x="636" y="0" width="196" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-4-box" />
-    <text x="734" y="22" text-anchor="middle" class="tab-text" fill="#ffffff">4. Live Telemetry</text>
+    <rect x="684" y="0" width="216" height="32" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" class="tab-4-box" />
+    <text x="792" y="21" text-anchor="middle" class="tab-text" fill="#ffffff">4. Live Telemetry</text>
   </g>
 
   <!-- 12-Second Progress Line -->
-  <g transform="translate(24, 94)">
-    <rect x="0" y="0" width="832" height="3.5" rx="1.75" fill="#21262d" />
+  <g transform="translate(30, 94)">
+    <rect x="0" y="0" width="900" height="3.5" rx="1.75" fill="#21262d" />
     <rect x="0" y="0" width="0" height="3.5" rx="1.75" fill="url(#blueGlow)" class="progress-bar-fill" />
   </g>
 
@@ -140,66 +140,66 @@
   <!-- FRAME 1: CI/CD, IaC Security & FinOps Gate (0s - 3s) -->
   <!-- ============================================================ -->
   <g class="frame-1">
-    <!-- Frame Title & Subtitle (Big & High Contrast) -->
-    <text x="24" y="124" class="heading">🛡️ Step 1: Pre-Merge IaC Security &amp; FinOps Cost Guard</text>
-    <text x="24" y="146" class="subheading">GitHub Actions validates Terraform syntax, scans Trivy misconfigurations, and enforces $250/mo budget.</text>
+    <!-- Frame Title & Subtitle -->
+    <text x="30" y="122" class="heading">🛡️ Step 1: Pre-Merge IaC Security &amp; FinOps Cost Guard</text>
+    <text x="30" y="142" class="subheading">GitHub Actions validates Terraform syntax, scans Trivy misconfigurations, and enforces $250/mo budget.</text>
 
-    <!-- Left: Pipeline Checks Card (width 490) -->
-    <rect x="24" y="162" width="490" height="298" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" />
+    <!-- Left: Pipeline Checks Card (width 530) -->
+    <rect x="30" y="156" width="530" height="306" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" />
 
     <!-- Job 1 -->
-    <g transform="translate(42, 192)">
-      <circle cx="12" cy="12" r="11" fill="#238636" />
-      <path d="M 8 12 L 11 15 L 17 9" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" />
-      <text x="34" y="17" class="code-xl" fill="#ffffff">terraform-validation</text>
-      <text x="248" y="17" class="code-lg" fill="#3fb950">[PASS] 0 syntax drift</text>
+    <g transform="translate(46, 184)">
+      <circle cx="12" cy="12" r="10" fill="#238636" />
+      <path d="M 8 12 L 11 15 L 16 9" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+      <text x="32" y="17" class="code-bold" fill="#ffffff">terraform-validation</text>
+      <text x="498" y="17" text-anchor="end" class="code-md" fill="#3fb950">[PASS] 0 syntax drift</text>
     </g>
 
     <!-- Job 2 -->
-    <g transform="translate(42, 240)">
-      <circle cx="12" cy="12" r="11" fill="#238636" />
-      <path d="M 8 12 L 11 15 L 17 9" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" />
-      <text x="34" y="17" class="code-xl" fill="#ffffff">trivy-iac-security</text>
-      <text x="248" y="17" class="code-lg" fill="#3fb950">[PASS] 0 CRITICAL / HIGH</text>
+    <g transform="translate(46, 230)">
+      <circle cx="12" cy="12" r="10" fill="#238636" />
+      <path d="M 8 12 L 11 15 L 16 9" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+      <text x="32" y="17" class="code-bold" fill="#ffffff">trivy-iac-security</text>
+      <text x="498" y="17" text-anchor="end" class="code-md" fill="#3fb950">[PASS] 0 CRITICAL / HIGH</text>
     </g>
 
-    <!-- Job 3: FinOps Highlighted -->
-    <g transform="translate(34, 282)">
-      <rect x="0" y="0" width="470" height="48" rx="6" fill="#1b2430" stroke="#388bfd" stroke-width="1.8" />
-      <circle cx="20" cy="24" r="11" fill="#238636" />
-      <path d="M 16 24 L 19 27 L 25 21" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" />
-      <text x="42" y="30" class="code-xl" fill="#58a6ff">finops-cost-governance</text>
-      <text x="256" y="30" class="code-xl" fill="#3fb950">[PASS] $148.60/mo</text>
+    <!-- Job 3: FinOps Highlighted Row -->
+    <g transform="translate(40, 272)">
+      <rect x="0" y="0" width="510" height="46" rx="6" fill="#182230" stroke="#388bfd" stroke-width="1.5" />
+      <circle cx="20" cy="23" r="10" fill="#238636" />
+      <path d="M 16 23 L 19 26 L 24 20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+      <text x="40" y="28" class="code-bold" fill="#58a6ff">finops-cost-governance</text>
+      <text x="494" y="28" text-anchor="end" class="code-bold" fill="#3fb950">[PASS] $148.60/mo (-38%)</text>
     </g>
 
     <!-- Job 4 -->
-    <g transform="translate(42, 350)">
-      <circle cx="12" cy="12" r="11" fill="#238636" />
-      <path d="M 8 12 L 11 15 L 17 9" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" />
-      <text x="34" y="17" class="code-xl" fill="#ffffff">kubeconform-validation</text>
-      <text x="248" y="17" class="code-lg" fill="#3fb950">[PASS] Strict K8s 1.31</text>
+    <g transform="translate(46, 336)">
+      <circle cx="12" cy="12" r="10" fill="#238636" />
+      <path d="M 8 12 L 11 15 L 16 9" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+      <text x="32" y="17" class="code-bold" fill="#ffffff">kubeconform-validation</text>
+      <text x="498" y="17" text-anchor="end" class="code-md" fill="#3fb950">[PASS] Strict K8s 1.31</text>
     </g>
 
     <!-- Card Footer -->
-    <line x1="42" y1="406" x2="494" y2="406" stroke="#21262d" />
-    <text x="42" y="436" class="code-md" fill="#8b949e">Pipeline #184: All 4 quality gates green • Commit 3f24a7d • 38s</text>
+    <line x1="46" y1="392" x2="544" y2="392" stroke="#21262d" />
+    <text x="46" y="422" class="code-sm" fill="#8b949e">Pipeline #184: All 4 quality gates green • Commit 3f24a7d • 38s</text>
 
-    <!-- Right Side: FinOps & Security Stat Panels (width 326) -->
+    <!-- Right Side: FinOps & Security Stat Panels (width 350) -->
     <!-- FinOps Card -->
-    <rect x="530" y="162" width="326" height="142" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.5" />
-    <text x="550" y="190" class="stat-label" fill="#58a6ff">FINOPS BUDGET CHECK</text>
-    <text x="550" y="228" class="stat-val" fill="#3fb950">$148.60<tspan font-size="17" fill="#c9d1d9" font-weight="600"> / mo</tspan></text>
-    <text x="550" y="254" class="code-md" fill="#c9d1d9">Policy Limit: $250.00/mo</text>
-    <rect x="550" y="266" width="286" height="9" rx="4.5" fill="#21262d" />
-    <rect x="550" y="266" width="170" height="9" rx="4.5" fill="url(#greenGlow)" />
-    <text x="550" y="292" class="code-lg" fill="#3fb950">59.4% budget used (+40.6% headroom)</text>
+    <rect x="580" y="156" width="350" height="145" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.3" />
+    <text x="600" y="184" class="stat-label" fill="#58a6ff">FINOPS BUDGET CHECK</text>
+    <text x="600" y="220" class="stat-val" fill="#3fb950">$148.60<tspan font-size="14" fill="#c9d1d9" font-weight="600"> / month</tspan></text>
+    <text x="600" y="246" class="code-sm" fill="#c9d1d9">Policy Limit: $250.00/mo</text>
+    <rect x="600" y="258" width="310" height="8" rx="4" fill="#21262d" />
+    <rect x="600" y="258" width="184" height="8" rx="4" fill="url(#greenGlow)" />
+    <text x="600" y="284" class="code-md" fill="#3fb950">59.4% budget used (+40.6% headroom)</text>
 
     <!-- Security Card -->
-    <rect x="530" y="318" width="326" height="142" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.3" />
-    <text x="550" y="346" class="stat-label">SECURITY &amp; COMPLIANCE</text>
-    <text x="550" y="384" class="stat-val" fill="#3fb950">0 Vulnerabilities</text>
-    <text x="550" y="410" class="code-md" fill="#c9d1d9">AWS CIS 1.4 Benchmark: PASSED</text>
-    <text x="550" y="436" class="code-lg" fill="#58a6ff">KMS envelope encryption active</text>
+    <rect x="580" y="317" width="350" height="145" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.2" />
+    <text x="600" y="345" class="stat-label">SECURITY &amp; COMPLIANCE</text>
+    <text x="600" y="381" class="stat-val" fill="#3fb950">0 Vulnerabilities</text>
+    <text x="600" y="408" class="code-sm" fill="#c9d1d9">AWS CIS 1.4 Benchmark: PASSED</text>
+    <text x="600" y="432" class="code-md" fill="#58a6ff">KMS envelope encryption active</text>
   </g>
 
   <!-- ============================================================ -->
@@ -207,84 +207,84 @@
   <!-- ============================================================ -->
   <g class="frame-2">
     <!-- Frame Title & Subtitle -->
-    <text x="24" y="124" class="heading">🔄 Step 2: Argo CD GitOps Continuous Reconciliation</text>
-    <text x="24" y="146" class="subheading">Argo CD watches k8s/base/ on branch main. Self-Heal and Auto-Prune keep cluster matched to Git.</text>
+    <text x="30" y="122" class="heading">🔄 Step 2: Argo CD GitOps Continuous Reconciliation</text>
+    <text x="30" y="142" class="subheading">Argo CD watches k8s/base/ on branch main. Self-Heal and Auto-Prune keep cluster matched to Git.</text>
 
     <!-- Main Argo Dashboard Card -->
-    <rect x="24" y="162" width="832" height="298" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" />
+    <rect x="30" y="156" width="900" height="306" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" />
 
     <!-- Argo Header -->
-    <g transform="translate(42, 178)">
-      <circle cx="22" cy="22" r="22" fill="#1b2430" stroke="#58a6ff" stroke-width="1.8" />
-      <text x="22" y="30" font-size="22" text-anchor="middle">🐙</text>
-      <text x="56" y="22" class="heading" font-size="21">cloudpulse-production</text>
-      <text x="56" y="44" class="code-md" fill="#c9d1d9">repo: cloudpulse-eks-gitops-infra • target: main (commit 3f24a7d)</text>
+    <g transform="translate(50, 174)">
+      <circle cx="20" cy="20" r="18" fill="#1b2430" stroke="#58a6ff" stroke-width="1.5" />
+      <text x="20" y="27" font-size="18" text-anchor="middle">🐙</text>
+      <text x="50" y="20" class="heading" font-size="18">cloudpulse-production</text>
+      <text x="50" y="38" class="code-sm" fill="#c9d1d9">repo: cloudpulse-eks-gitops-infra • target: main (commit 3f24a7d)</text>
 
       <!-- Sync Status Badge -->
-      <rect x="460" y="4" width="168" height="38" rx="19" fill="#162e20" stroke="#2ea043" stroke-width="1.5" />
-      <circle cx="482" cy="23" r="6" fill="#3fb950" />
-      <text x="498" y="30" class="code-xl" fill="#3fb950">Synced (Auto)</text>
+      <rect x="560" y="4" width="150" height="32" rx="16" fill="#162e20" stroke="#2ea043" stroke-width="1.2" />
+      <circle cx="578" cy="20" r="5" fill="#3fb950" />
+      <text x="592" y="25" class="code-bold" fill="#3fb950">Synced (Auto)</text>
 
       <!-- Health Status Badge -->
-      <rect x="642" y="4" width="154" height="38" rx="19" fill="#162e20" stroke="#2ea043" stroke-width="1.5" />
-      <text x="662" y="30" font-size="18">💚</text>
-      <text x="686" y="30" class="code-xl" fill="#3fb950">Healthy (UP)</text>
+      <rect x="726" y="4" width="144" height="32" rx="16" fill="#162e20" stroke="#2ea043" stroke-width="1.2" />
+      <text x="744" y="25" font-size="15">💚</text>
+      <text x="766" y="25" class="code-bold" fill="#3fb950">Healthy (UP)</text>
     </g>
 
-    <!-- Argo Topology Tree (Big, Bold & Clear) -->
-    <g transform="translate(42, 238)">
+    <!-- Argo Topology Tree (Clean & Spacious) -->
+    <g transform="translate(50, 234)">
       <!-- Connecting Lines -->
-      <line x1="86" y1="46" x2="160" y2="46" stroke="#30363d" stroke-width="2.5" />
-      <line x1="160" y1="20" x2="160" y2="136" stroke="#30363d" stroke-width="2.5" />
-      <line x1="160" y1="20" x2="210" y2="20" stroke="#30363d" stroke-width="2.5" />
-      <line x1="160" y1="58" x2="210" y2="58" stroke="#30363d" stroke-width="2.5" />
-      <line x1="160" y1="96" x2="210" y2="96" stroke="#30363d" stroke-width="2.5" />
-      <line x1="160" y1="136" x2="210" y2="136" stroke="#30363d" stroke-width="2.5" />
-      <line x1="416" y1="136" x2="456" y2="136" stroke="#30363d" stroke-width="2.5" />
-      <line x1="646" y1="136" x2="676" y2="136" stroke="#30363d" stroke-width="2.5" />
-      <line x1="676" y1="116" x2="676" y2="154" stroke="#30363d" stroke-width="2.5" />
-      <line x1="676" y1="116" x2="690" y2="116" stroke="#30363d" stroke-width="2.5" />
-      <line x1="676" y1="154" x2="690" y2="154" stroke="#30363d" stroke-width="2.5" />
+      <line x1="82" y1="48" x2="160" y2="48" stroke="#30363d" stroke-width="2" />
+      <line x1="160" y1="16" x2="160" y2="130" stroke="#30363d" stroke-width="2" />
+      <line x1="160" y1="16" x2="210" y2="16" stroke="#30363d" stroke-width="2" />
+      <line x1="160" y1="54" x2="210" y2="54" stroke="#30363d" stroke-width="2" />
+      <line x1="160" y1="92" x2="210" y2="92" stroke="#30363d" stroke-width="2" />
+      <line x1="160" y1="130" x2="210" y2="130" stroke="#30363d" stroke-width="2" />
+      <line x1="420" y1="130" x2="470" y2="130" stroke="#30363d" stroke-width="2" />
+      <line x1="660" y1="130" x2="700" y2="130" stroke="#30363d" stroke-width="2" />
+      <line x1="680" y1="108" x2="680" y2="150" stroke="#30363d" stroke-width="2" />
+      <line x1="680" y1="108" x2="700" y2="108" stroke="#30363d" stroke-width="2" />
+      <line x1="680" y1="150" x2="700" y2="150" stroke="#30363d" stroke-width="2" />
 
       <!-- App Root -->
-      <rect x="0" y="20" width="86" height="52" rx="7" fill="#1b2430" stroke="#58a6ff" stroke-width="2" />
-      <text x="43" y="52" text-anchor="middle" class="code-xl" fill="#58a6ff" font-size="18">App</text>
+      <rect x="0" y="24" width="82" height="48" rx="6" fill="#1b2430" stroke="#58a6ff" stroke-width="1.6" />
+      <text x="41" y="53" text-anchor="middle" class="code-bold" fill="#58a6ff" font-size="16">App</text>
 
       <!-- Resource Nodes -->
-      <rect x="210" y="2" width="206" height="36" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.3" />
-      <circle cx="230" cy="20" r="5.5" fill="#3fb950" />
-      <text x="248" y="26" class="code-xl" fill="#ffffff">ns/cloudpulse</text>
+      <rect x="210" y="0" width="210" height="32" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+      <circle cx="228" cy="16" r="4.5" fill="#3fb950" />
+      <text x="242" y="21" class="code-md" fill="#ffffff">ns/cloudpulse</text>
 
-      <rect x="210" y="40" width="206" height="36" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.3" />
-      <circle cx="230" cy="58" r="5.5" fill="#3fb950" />
-      <text x="248" y="64" class="code-xl" fill="#ffffff">svc/cloudpulse (80)</text>
+      <rect x="210" y="38" width="210" height="32" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+      <circle cx="228" cy="54" r="4.5" fill="#3fb950" />
+      <text x="242" y="59" class="code-md" fill="#ffffff">svc/cloudpulse (80)</text>
 
-      <rect x="210" y="78" width="206" height="36" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.3" />
-      <circle cx="230" cy="96" r="5.5" fill="#3fb950" />
-      <text x="248" y="102" class="code-xl" fill="#ffffff">hpa/cloudpulse-hpa</text>
+      <rect x="210" y="76" width="210" height="32" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+      <circle cx="228" cy="92" r="4.5" fill="#3fb950" />
+      <text x="242" y="97" class="code-md" fill="#ffffff">hpa/cloudpulse-hpa</text>
 
-      <rect x="210" y="118" width="206" height="36" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.3" />
-      <circle cx="230" cy="136" r="5.5" fill="#3fb950" />
-      <text x="248" y="142" class="code-xl" fill="#ffffff">deploy/cloudpulse</text>
+      <rect x="210" y="114" width="210" height="32" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+      <circle cx="228" cy="130" r="4.5" fill="#3fb950" />
+      <text x="242" y="135" class="code-md" fill="#ffffff">deploy/cloudpulse</text>
 
       <!-- ReplicaSet -->
-      <rect x="456" y="118" width="190" height="36" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.3" />
-      <circle cx="476" cy="136" r="5.5" fill="#3fb950" />
-      <text x="494" y="142" class="code-xl" fill="#ffffff">rs/cloudpulse-6466</text>
+      <rect x="470" y="114" width="190" height="32" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+      <circle cx="488" cy="130" r="4.5" fill="#3fb950" />
+      <text x="502" y="135" class="code-md" fill="#ffffff">rs/cloudpulse-6466</text>
 
       <!-- Pods -->
-      <rect x="690" y="98" width="134" height="34" rx="6" fill="#161b22" stroke="#2ea043" stroke-width="1.5" />
-      <circle cx="708" cy="115" r="5.5" fill="#3fb950" />
-      <text x="722" y="122" class="code-lg" fill="#3fb950">pod/pulse-gf9</text>
+      <rect x="700" y="92" width="180" height="32" rx="5" fill="#161b22" stroke="#2ea043" stroke-width="1.3" />
+      <circle cx="715" cy="108" r="4.5" fill="#3fb950" />
+      <text x="726" y="113" class="code-bold" font-size="12.5" fill="#3fb950">pod/cloudpulse-gf9</text>
 
-      <rect x="690" y="138" width="134" height="34" rx="6" fill="#161b22" stroke="#2ea043" stroke-width="1.5" />
-      <circle cx="708" cy="155" r="5.5" fill="#3fb950" />
-      <text x="722" y="162" class="code-lg" fill="#3fb950">pod/pulse-jd4</text>
+      <rect x="700" y="134" width="180" height="32" rx="5" fill="#161b22" stroke="#2ea043" stroke-width="1.3" />
+      <circle cx="715" cy="150" r="4.5" fill="#3fb950" />
+      <text x="726" y="155" class="code-bold" font-size="12.5" fill="#3fb950">pod/cloudpulse-jd4</text>
     </g>
 
     <!-- Argo Footer Banner -->
-    <rect x="42" y="416" width="796" height="36" rx="6" fill="#161b22" />
-    <text x="60" y="440" class="code-lg" fill="#c9d1d9">
+    <rect x="40" y="418" width="860" height="32" rx="6" fill="#161b22" />
+    <text x="60" y="439" class="code-sm" fill="#c9d1d9">
       GitOps Policy: <tspan fill="#3fb950">selfHeal: true</tspan> • <tspan fill="#3fb950">prune: true</tspan> • Target: https://kubernetes.default.svc (cloudpulse)
     </text>
   </g>
@@ -294,66 +294,72 @@
   <!-- ============================================================ -->
   <g class="frame-3">
     <!-- Frame Title & Subtitle -->
-    <text x="24" y="124" class="heading">⚡ Step 3: Kubernetes HPA Dynamic Surge Auto-Scaling</text>
-    <text x="24" y="146" class="subheading">Flash-sale simulated surge triggers CPU spike (78% vs 60% target) ➔ HPA rapidly scales pods 2 ➔ 6.</text>
+    <text x="30" y="122" class="heading">⚡ Step 3: Kubernetes HPA Dynamic Surge Auto-Scaling</text>
+    <text x="30" y="142" class="subheading">Flash-sale simulated surge triggers CPU utilization spike (78% vs 60% target) ➔ HPA scales pods 2 ➔ 6.</text>
 
-    <!-- Alert Banner (Large & Vibrant) -->
-    <rect x="24" y="162" width="832" height="46" rx="8" fill="#2d1c0e" stroke="#d29922" stroke-width="1.6" />
-    <text x="44" y="192" font-size="20">🔥</text>
-    <text x="72" y="192" class="code-xl" fill="#f0883e">SURGE DETECTED:</text>
-    <text x="250" y="192" class="code-lg" fill="#ffffff">Traffic surged to 300 req/sec • CPU at 78% (Target: 60%)</text>
-    <rect x="686" y="168" width="158" height="34" rx="17" fill="#f0883e" />
-    <text x="765" y="191" text-anchor="middle" class="code-xl" fill="#0d1117" font-size="14.5">SCALING ACTIVE</text>
+    <!-- Alert Banner (Clean Width, No Overflow) -->
+    <rect x="30" y="156" width="900" height="42" rx="6" fill="#2d1c0e" stroke="#d29922" stroke-width="1.3" />
+    <text x="48" y="182" font-size="18">🔥</text>
+    <text x="74" y="182" class="code-bold" fill="#f0883e">SURGE DETECTED:</text>
+    <text x="220" y="182" class="code-md" fill="#ffffff">Traffic surged to 300 req/sec • CPU at 78% (Threshold: 60%)</text>
+    <rect x="755" y="162" width="160" height="30" rx="15" fill="#f0883e" />
+    <text x="835" y="182" text-anchor="middle" class="code-bold" fill="#0d1117" font-size="12.5">SCALING ACTIVE</text>
 
-    <!-- Pod Matrix (6 pods in 3x2 grid, width 264, height 82) -->
+    <!-- Pod Matrix (6 pods in 3x2 grid, width 288, height 78) -->
     <!-- Row 1 -->
     <!-- Pod 1 -->
-    <rect x="24" y="218" width="264" height="82" rx="8" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.4" />
-    <circle cx="46" cy="242" r="6" fill="#3fb950" />
-    <text x="62" y="247" class="code-xl" fill="#ffffff">cloudpulse-pod-1</text>
-    <text x="46" y="270" class="code-lg" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
-    <text x="46" y="289" class="code-md" fill="#8b949e">CPU: 42m / 500m • Mem: 84Mi</text>
+    <rect x="30" y="210" width="288" height="78" rx="6" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.3" />
+    <circle cx="48" cy="230" r="5" fill="#3fb950" />
+    <text x="62" y="235" class="code-bold" fill="#ffffff">cloudpulse-pod-1</text>
+    <text x="306" y="235" text-anchor="end" class="code-sm" fill="#3fb950">Ready</text>
+    <text x="48" y="255" class="code-sm" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
+    <text x="48" y="273" class="code-sm" fill="#8b949e">CPU: 42m / 500m • Mem: 84Mi</text>
 
     <!-- Pod 2 -->
-    <rect x="308" y="218" width="264" height="82" rx="8" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.4" />
-    <circle cx="330" cy="242" r="6" fill="#3fb950" />
-    <text x="346" y="247" class="code-xl" fill="#ffffff">cloudpulse-pod-2</text>
-    <text x="330" y="270" class="code-lg" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
-    <text x="330" y="289" class="code-md" fill="#8b949e">CPU: 46m / 500m • Mem: 88Mi</text>
+    <rect x="336" y="210" width="288" height="78" rx="6" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.3" />
+    <circle cx="354" cy="230" r="5" fill="#3fb950" />
+    <text x="368" y="235" class="code-bold" fill="#ffffff">cloudpulse-pod-2</text>
+    <text x="612" y="235" text-anchor="end" class="code-sm" fill="#3fb950">Ready</text>
+    <text x="354" y="255" class="code-sm" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
+    <text x="354" y="273" class="code-sm" fill="#8b949e">CPU: 46m / 500m • Mem: 88Mi</text>
 
     <!-- Pod 3 -->
-    <rect x="592" y="218" width="264" height="82" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.5" />
-    <circle cx="614" cy="242" r="6" fill="#58a6ff" />
-    <text x="630" y="247" class="code-xl" fill="#58a6ff">cloudpulse-pod-3 [SCALED]</text>
-    <text x="614" y="270" class="code-lg" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
-    <text x="614" y="289" class="code-md" fill="#8b949e">Autoscaled via HPA • agent-0</text>
+    <rect x="642" y="210" width="288" height="78" rx="6" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.4" />
+    <circle cx="660" cy="230" r="5" fill="#58a6ff" />
+    <text x="674" y="235" class="code-bold" fill="#58a6ff">cloudpulse-pod-3</text>
+    <text x="918" y="235" text-anchor="end" class="code-bold" fill="#58a6ff">[SCALED]</text>
+    <text x="660" y="255" class="code-sm" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
+    <text x="660" y="273" class="code-sm" fill="#8b949e">Autoscaled via HPA • node-0</text>
 
     <!-- Row 2 -->
     <!-- Pod 4 -->
-    <rect x="24" y="310" width="264" height="82" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.5" />
-    <circle cx="46" cy="334" r="6" fill="#58a6ff" />
-    <text x="62" y="339" class="code-xl" fill="#58a6ff">cloudpulse-pod-4 [SCALED]</text>
-    <text x="46" y="362" class="code-lg" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
-    <text x="46" y="381" class="code-md" fill="#8b949e">Autoscaled via HPA • agent-1</text>
+    <rect x="30" y="300" width="288" height="78" rx="6" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.4" />
+    <circle cx="48" cy="320" r="5" fill="#58a6ff" />
+    <text x="62" y="325" class="code-bold" fill="#58a6ff">cloudpulse-pod-4</text>
+    <text x="306" y="325" text-anchor="end" class="code-bold" fill="#58a6ff">[SCALED]</text>
+    <text x="48" y="345" class="code-sm" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
+    <text x="48" y="363" class="code-sm" fill="#8b949e">Autoscaled via HPA • node-1</text>
 
     <!-- Pod 5 -->
-    <rect x="308" y="310" width="264" height="82" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.5" />
-    <circle cx="330" cy="334" r="6" fill="#58a6ff" />
-    <text x="346" y="339" class="code-xl" fill="#58a6ff">cloudpulse-pod-5 [SCALED]</text>
-    <text x="330" y="362" class="code-lg" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
-    <text x="330" y="381" class="code-md" fill="#8b949e">Autoscaled via HPA • agent-0</text>
+    <rect x="336" y="300" width="288" height="78" rx="6" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.4" />
+    <circle cx="354" cy="320" r="5" fill="#58a6ff" />
+    <text x="368" y="325" class="code-bold" fill="#58a6ff">cloudpulse-pod-5</text>
+    <text x="612" y="325" text-anchor="end" class="code-bold" fill="#58a6ff">[SCALED]</text>
+    <text x="354" y="345" class="code-sm" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
+    <text x="354" y="363" class="code-sm" fill="#8b949e">Autoscaled via HPA • node-0</text>
 
     <!-- Pod 6 -->
-    <rect x="592" y="310" width="264" height="82" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.5" />
-    <circle cx="614" cy="334" r="6" fill="#58a6ff" />
-    <text x="630" y="339" class="code-xl" fill="#58a6ff">cloudpulse-pod-6 [MAX]</text>
-    <text x="614" y="362" class="code-lg" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
-    <text x="614" y="381" class="code-md" fill="#8b949e">Ceiling: 6 Replicas • 0 dropped</text>
+    <rect x="642" y="300" width="288" height="78" rx="6" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.4" />
+    <circle cx="660" cy="320" r="5" fill="#58a6ff" />
+    <text x="674" y="325" class="code-bold" fill="#58a6ff">cloudpulse-pod-6</text>
+    <text x="918" y="325" text-anchor="end" class="code-bold" fill="#58a6ff">[MAX]</text>
+    <text x="660" y="345" class="code-sm" fill="#c9d1d9">Status: <tspan fill="#3fb950">Running (1/1 Ready)</tspan></text>
+    <text x="660" y="363" class="code-sm" fill="#8b949e">Ceiling: 6 Replicas • 0 dropped</text>
 
-    <!-- HPA Summary Bar (Large & Prominent) -->
-    <rect x="24" y="402" width="832" height="42" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.3" />
-    <text x="44" y="428" class="code-lg" fill="#c9d1d9">
-      kubectl get hpa: <tspan fill="#ffffff">MIN: 2</tspan> • <tspan fill="#ffffff">MAX: 6</tspan> • <tspan fill="#58a6ff" font-weight="900">REPLICAS: 6</tspan> • <tspan fill="#3fb950">Restarts: 0</tspan> • Probes: /healthz 200 OK
+    <!-- HPA Summary Bar -->
+    <rect x="30" y="390" width="900" height="36" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.2" />
+    <text x="50" y="413" class="code-md" fill="#c9d1d9">
+      kubectl get hpa: <tspan fill="#ffffff">MIN: 2</tspan> • <tspan fill="#ffffff">MAX: 6</tspan> • <tspan fill="#58a6ff" font-weight="700">REPLICAS: 6</tspan> • <tspan fill="#3fb950">Health: 0 Restarts</tspan> • Probes: /healthz 200 OK
     </text>
   </g>
 
@@ -362,75 +368,75 @@
   <!-- ============================================================ -->
   <g class="frame-4">
     <!-- Frame Title & Subtitle -->
-    <text x="24" y="124" class="heading">📊 Step 4: Real-Time Grafana Telemetry &amp; SLI Metrics</text>
-    <text x="24" y="146" class="subheading">Prometheus scrapes pod :8000/metrics. Grafana tracks traffic rate, p99 latency, and cluster health.</text>
+    <text x="30" y="122" class="heading">📊 Step 4: Real-Time Grafana Telemetry &amp; SLI Metrics</text>
+    <text x="30" y="142" class="subheading">Prometheus scrapes pod annotations on :8000/metrics. Grafana visualizes throughput rate, p99 latency, and health.</text>
 
-    <!-- Row of 4 KPI Stat Boxes (height 78) -->
-    <g transform="translate(24, 162)">
+    <!-- Row of 4 KPI Stat Boxes (height 76) -->
+    <g transform="translate(30, 156)">
       <!-- Stat 1 -->
-      <rect x="0" y="0" width="196" height="78" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.4" />
-      <text x="18" y="24" class="stat-label">TOTAL REQUESTS</text>
-      <text x="18" y="58" class="stat-val" fill="#58a6ff">32.6 K</text>
-      <text x="122" y="58" class="code-lg" fill="#3fb950">+300 rps</text>
+      <rect x="0" y="0" width="216" height="76" rx="8" fill="url(#cardGrad)" stroke="#388bfd" stroke-width="1.3" />
+      <text x="16" y="24" class="stat-label">TOTAL REQUESTS</text>
+      <text x="16" y="55" class="stat-val" fill="#58a6ff">32.6 K</text>
+      <text x="200" y="53" text-anchor="end" class="code-bold" fill="#3fb950">+300 rps</text>
 
       <!-- Stat 2 -->
-      <rect x="212" y="0" width="196" height="78" rx="8" fill="url(#cardGrad)" stroke="#bc8cff" stroke-width="1.4" />
-      <text x="230" y="24" class="stat-label">SURGE EVENTS</text>
-      <text x="230" y="58" class="stat-val" fill="#bc8cff">51</text>
-      <text x="278" y="58" class="code-lg" fill="#f0883e">Flash-Sale</text>
+      <rect x="228" y="0" width="216" height="76" rx="8" fill="url(#cardGrad)" stroke="#bc8cff" stroke-width="1.3" />
+      <text x="244" y="24" class="stat-label">SURGE EVENTS</text>
+      <text x="244" y="55" class="stat-val" fill="#bc8cff">51</text>
+      <text x="428" y="53" text-anchor="end" class="code-bold" fill="#f0883e">Flash-Sale</text>
 
       <!-- Stat 3 -->
-      <rect x="424" y="0" width="196" height="78" rx="8" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.4" />
-      <text x="442" y="24" class="stat-label">P99 LATENCY</text>
-      <text x="442" y="58" class="stat-val" fill="#3fb950">41 ms</text>
-      <text x="536" y="58" class="code-lg" fill="#3fb950">&lt;100ms</text>
+      <rect x="456" y="0" width="216" height="76" rx="8" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.3" />
+      <text x="472" y="24" class="stat-label">P99 LATENCY</text>
+      <text x="472" y="55" class="stat-val" fill="#3fb950">41 ms</text>
+      <text x="656" y="53" text-anchor="end" class="code-bold" fill="#3fb950">&lt;100ms</text>
 
       <!-- Stat 4 -->
-      <rect x="636" y="0" width="196" height="78" rx="8" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.4" />
-      <text x="654" y="24" class="stat-label">SERVICE HEALTH</text>
-      <text x="654" y="58" class="stat-val" fill="#3fb950">UP (1.0)</text>
-      <text x="768" y="58" class="code-lg" fill="#3fb950">99.98%</text>
+      <rect x="684" y="0" width="216" height="76" rx="8" fill="url(#cardGrad)" stroke="#2ea043" stroke-width="1.3" />
+      <text x="700" y="24" class="stat-label">SERVICE HEALTH</text>
+      <text x="700" y="55" class="stat-val" fill="#3fb950">UP (1.0)</text>
+      <text x="884" y="53" text-anchor="end" class="code-bold" fill="#3fb950">99.98%</text>
     </g>
 
-    <!-- Timeseries Chart Card (height 152) -->
-    <rect x="24" y="250" width="832" height="152" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.3" />
-    <text x="44" y="278" class="code-xl" fill="#ffffff">Active Flash-Sale Traffic Rate (rate(cloudpulse_http_requests_total[1m]))</text>
-    <text x="842" y="278" text-anchor="end" class="code-lg" fill="#c9d1d9">Live: 5s refresh</text>
+    <!-- Timeseries Chart Card (height 154) -->
+    <rect x="30" y="244" width="900" height="154" rx="8" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1" />
+    <text x="50" y="270" class="code-bold" fill="#ffffff">Active Flash-Sale Traffic Rate (rate(cloudpulse_http_requests_total[1m]))</text>
+    <text x="880" y="270" text-anchor="end" class="code-sm" fill="#c9d1d9">Live: 5s refresh</text>
 
     <!-- Grid Lines & Y-axis -->
-    <line x1="56" y1="294" x2="824" y2="294" stroke="#21262d" />
-    <line x1="56" y1="324" x2="824" y2="324" stroke="#21262d" />
-    <line x1="56" y1="354" x2="824" y2="354" stroke="#21262d" />
+    <line x1="60" y1="286" x2="870" y2="286" stroke="#21262d" />
+    <line x1="60" y1="316" x2="870" y2="316" stroke="#21262d" />
+    <line x1="60" y1="346" x2="870" y2="346" stroke="#21262d" />
 
-    <text x="46" y="298" text-anchor="end" class="code-lg" font-size="12" fill="#8b949e">300</text>
-    <text x="46" y="328" text-anchor="end" class="code-lg" font-size="12" fill="#8b949e">150</text>
-    <text x="46" y="358" text-anchor="end" class="code-lg" font-size="12" fill="#8b949e">0</text>
+    <text x="50" y="290" text-anchor="end" class="code-sm" font-size="11" fill="#8b949e">300</text>
+    <text x="50" y="320" text-anchor="end" class="code-sm" font-size="11" fill="#8b949e">150</text>
+    <text x="50" y="350" text-anchor="end" class="code-sm" font-size="11" fill="#8b949e">0</text>
 
     <!-- Sparkline Area & Curve -->
-    <path d="M 56 354 L 180 354 Q 230 354 270 316 T 370 280 T 450 302 T 530 354 L 660 354 Q 700 354 740 290 T 800 276 L 824 276 L 824 354 Z" fill="url(#chartFill)" />
-    <path d="M 56 354 L 180 354 Q 230 354 270 316 T 370 280 T 450 302 T 530 354 L 660 354 Q 700 354 740 290 T 800 276 L 824 276" fill="none" stroke="#58a6ff" stroke-width="3" />
-    <path d="M 56 352 L 824 352" fill="none" stroke="#3fb950" stroke-width="2" stroke-dasharray="5,4" />
+    <path d="M 60 348 L 190 348 Q 240 348 280 312 T 380 274 T 460 296 T 540 348 L 680 348 Q 720 348 760 286 T 830 272 L 870 272 L 870 348 Z" fill="url(#chartFill)" />
+    <path d="M 60 348 L 190 348 Q 240 348 280 312 T 380 274 T 460 296 T 540 348 L 680 348 Q 720 348 760 286 T 830 272 L 870 272" fill="none" stroke="#58a6ff" stroke-width="2.8" />
+    <path d="M 60 346 L 870 346" fill="none" stroke="#3fb950" stroke-width="1.8" stroke-dasharray="5,4" />
 
-    <!-- Chart Legend (Big & Spacious) -->
-    <circle cx="64" cy="386" r="6" fill="#58a6ff" />
-    <text x="78" y="392" class="code-xl" fill="#ffffff">checkout (HTTP 200) - Peak: 194 rps</text>
+    <!-- Chart Legend -->
+    <circle cx="70" cy="380" r="5" fill="#58a6ff" />
+    <text x="84" y="385" class="code-md" fill="#ffffff">checkout (HTTP 200) - Peak: 194 rps</text>
 
-    <circle cx="430" cy="386" r="6" fill="#3fb950" />
-    <text x="444" y="392" class="code-xl" fill="#ffffff">healthz (HTTP 200) - 1.35 rps</text>
+    <circle cx="410" cy="380" r="5" fill="#3fb950" />
+    <text x="424" y="385" class="code-md" fill="#ffffff">healthz (HTTP 200) - 1.35 rps</text>
 
-    <text x="824" y="392" text-anchor="end" class="code-xl" fill="#3fb950">Pods Ready: 6/6</text>
+    <text x="870" y="385" text-anchor="end" class="code-bold" fill="#3fb950">Pods Ready: 6/6</text>
 
     <!-- Bottom Telemetry Status -->
-    <rect x="24" y="412" width="832" height="34" rx="6" fill="#161b22" />
-    <text x="44" y="434" class="code-lg" fill="#c9d1d9">
+    <rect x="30" y="410" width="900" height="34" rx="6" fill="#161b22" />
+    <text x="50" y="432" class="code-sm" fill="#c9d1d9">
       Prometheus: <tspan fill="#3fb950">UP</tspan> • Scrape Interval: 10s • Dashboard: <tspan fill="#58a6ff">cloudpulse-prod-telemetry</tspan> • Alerts Firing: 0
     </text>
   </g>
 
-  <!-- Global Footer Bar (Ample Spacing, Zero Overlap) -->
-  <g transform="translate(24, 480)">
-    <line x1="0" y1="0" x2="832" y2="0" stroke="#21262d" stroke-width="1" />
+  <!-- Global Footer Bar (Clean, Spacious, Guaranteed No Overlap) -->
+  <g transform="translate(30, 488)">
+    <line x1="0" y1="0" x2="900" y2="0" stroke="#21262d" stroke-width="1" />
     <text x="0" y="24" class="footer-note">CloudPulse GitOps Platform • AWS EKS v1.31 + Argo CD + Prometheus Stack</text>
-    <text x="832" y="24" text-anchor="end" class="code-lg" fill="#58a6ff" font-size="14.5">100% Declarative IaC</text>
+    <text x="900" y="24" text-anchor="end" class="code-bold" fill="#58a6ff" font-size="13">100% Declarative IaC</text>
   </g>
 </svg>
