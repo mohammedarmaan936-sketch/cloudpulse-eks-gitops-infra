@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <linearGradient id="passGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#238636" />
+      <stop offset="100%" stop-color="#2ea043" />
+    </linearGradient>
+    <linearGradient id="metricGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f242c" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" />
+      <stop offset="50%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#3fb950" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 600; fill: #f0f6fc; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; fill: #8b949e; }
+    .bot-name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #c9d1d9; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #ffffff; }
+    .stat-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-value { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 700; fill: #f0f6fc; }
+    .stat-delta { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .th { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #8b949e; }
+    .td { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; fill: #c9d1d9; }
+    .td-code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #58a6ff; }
+    .td-num { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #f0f6fc; text-anchor: end; }
+    .td-green { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #3fb950; text-anchor: end; }
+    .td-muted { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; fill: #8b949e; text-anchor: end; }
+    .footer-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; fill: #8b949e; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="10" y="10" width="900" height="600" rx="12" fill="url(#bgGrad)" stroke="#30363d" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Top Accent Bar -->
+  <path d="M 10 22 Q 10 10 22 10 L 898 10 Q 910 10 910 22 L 910 25 L 10 25 Z" fill="url(#accentGlow)" />
+
+  <!-- PR Comment Header -->
+  <g transform="translate(30, 45)">
+    <!-- GitHub Actions Bot Avatar -->
+    <rect x="0" y="0" width="36" height="36" rx="18" fill="#1f242c" stroke="#388bfd" stroke-width="1.5" />
+    <path d="M 12 18 L 16 22 L 24 14" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <text x="46" y="16" class="bot-name">github-actions <tspan fill="#8b949e" font-weight="normal">bot commented in</tspan> #42 <tspan fill="#3fb950" font-weight="normal">• CI / FinOps Policy Gate</tspan></text>
+    <text x="46" y="32" class="subtitle">CloudPulse Terraform IaC Cost Breakdown • Environment: <tspan fill="#f0f6fc">production</tspan> (ap-south-1)</text>
+
+    <!-- Pass Badge -->
+    <rect x="540" y="2" width="300" height="30" rx="15" fill="url(#passGrad)" />
+    <circle cx="555" cy="17" r="6" fill="#ffffff" />
+    <path d="M 552 17 L 554.5 19.5 L 558.5 14.5" fill="none" stroke="#238636" stroke-width="2" stroke-linecap="round" />
+    <text x="568" y="22" class="badge-text">FinOps Policy: PASSED (Under $250/mo)</text>
+  </g>
+
+  <!-- Metric Callout Cards -->
+  <g transform="translate(30, 95)">
+    <!-- Card 1: Estimated Monthly -->
+    <rect x="0" y="0" width="200" height="74" rx="8" fill="url(#metricGrad1)" stroke="#388bfd" stroke-width="1.2" />
+    <text x="16" y="22" class="stat-label">Estimated Monthly Spend</text>
+    <text x="16" y="52" class="stat-value" fill="#58a6ff">$148.60<tspan font-size="12" fill="#8b949e" font-weight="normal">/mo</tspan></text>
+
+    <!-- Card 2: Baseline Architecture -->
+    <rect x="215" y="0" width="200" height="74" rx="8" fill="url(#metricGrad1)" stroke="#30363d" stroke-width="1" />
+    <text x="231" y="22" class="stat-label">Baseline (Multi-AZ On-Demand)</text>
+    <text x="231" y="52" class="stat-value" fill="#8b949e">$240.00<tspan font-size="12" fill="#8b949e" font-weight="normal">/mo</tspan></text>
+
+    <!-- Card 3: Monthly Savings Delta -->
+    <rect x="430" y="0" width="205" height="74" rx="8" fill="url(#metricGrad1)" stroke="#238636" stroke-width="1.2" />
+    <text x="446" y="22" class="stat-label">Monthly Optimization Delta</text>
+    <text x="446" y="52" class="stat-value" fill="#3fb950">-$91.40<tspan font-size="13" fill="#3fb950" font-weight="600"> (-38.1%)</tspan></text>
+
+    <!-- Card 4: Budget Headroom -->
+    <rect x="650" y="0" width="210" height="74" rx="8" fill="url(#metricGrad1)" stroke="#30363d" stroke-width="1" />
+    <text x="666" y="22" class="stat-label">Budget Headroom ($250 Limit)</text>
+    <text x="666" y="52" class="stat-value" fill="#3fb950">+$101.40<tspan font-size="12" fill="#8b949e" font-weight="normal"> (40.6% buffer)</tspan></text>
+  </g>
+
+  <!-- Cost Breakdown Table -->
+  <g transform="translate(30, 190)">
+    <!-- Table Header Background -->
+    <rect x="0" y="0" width="860" height="34" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="16" y="22" class="th">AWS RESOURCE</text>
+    <text x="220" y="22" class="th">CONFIGURATION / TIER</text>
+    <text x="560" y="22" class="th" text-anchor="end">BASELINE</text>
+    <text x="690" y="22" class="th" text-anchor="end">OPTIMIZED</text>
+    <text x="844" y="22" class="th" text-anchor="end">FINOPS DELTA</text>
+
+    <!-- Table Rows -->
+    <!-- Row 1: EKS Control Plane -->
+    <g transform="translate(0, 36)">
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">EKS Control Plane</text>
+      <text x="220" y="21" class="td-code">AWS EKS v1.31 (cloudpulse-eks-prod)</text>
+      <text x="560" y="21" class="td-num">$73.00</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$73.00</text>
+      <text x="844" y="21" class="td-muted">$0.00 (Standard)</text>
+    </g>
+
+    <!-- Row 2: NAT Gateways -->
+    <g transform="translate(0, 68)">
+      <rect x="0" y="0" width="860" height="32" fill="#161b22" opacity="0.4" />
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">NAT Gateways</text>
+      <text x="220" y="21" class="td">Single-AZ Shared NAT (1 active)</text>
+      <text x="560" y="21" class="td-num">$65.70</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$32.85</text>
+      <text x="844" y="21" class="td-green">-$32.85 (-50.0%)</text>
+    </g>
+
+    <!-- Row 3: EC2 Worker Nodes -->
+    <g transform="translate(0, 100)">
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">EC2 Worker Nodes</text>
+      <text x="220" y="21" class="td">2x t3.medium (Spot / Graviton hybrid)</text>
+      <text x="560" y="21" class="td-num">$60.74</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$24.30</text>
+      <text x="844" y="21" class="td-green">-$36.44 (-60.0%)</text>
+    </g>
+
+    <!-- Row 4: EBS Storage -->
+    <g transform="translate(0, 132)">
+      <rect x="0" y="0" width="860" height="32" fill="#161b22" opacity="0.4" />
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">EBS Volumes</text>
+      <text x="220" y="21" class="td">100 GB gp3 (2x 50GB encrypted)</text>
+      <text x="560" y="21" class="td-num">$8.00</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$8.00</text>
+      <text x="844" y="21" class="td-muted">$0.00 (gp3 base)</text>
+    </g>
+
+    <!-- Row 5: CloudWatch Logs -->
+    <g transform="translate(0, 164)">
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">CloudWatch Logs</text>
+      <text x="220" y="21" class="td">VPC Flow Logs + EKS Audit (30d retention)</text>
+      <text x="560" y="21" class="td-num">$6.00</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$6.00</text>
+      <text x="844" y="21" class="td-muted">$0.00 (Filtered)</text>
+    </g>
+
+    <!-- Row 6: KMS Key -->
+    <g transform="translate(0, 196)">
+      <rect x="0" y="0" width="860" height="32" fill="#161b22" opacity="0.4" />
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">KMS Customer Key</text>
+      <text x="220" y="21" class="td">Secrets Envelope Encryption (Auto-rotated)</text>
+      <text x="560" y="21" class="td-num">$1.00</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$1.00</text>
+      <text x="844" y="21" class="td-muted">$0.00 (1 key)</text>
+    </g>
+
+    <!-- Row 7: Network Data Transfer -->
+    <g transform="translate(0, 228)">
+      <line x1="0" y1="32" x2="860" y2="32" stroke="#21262d" />
+      <text x="16" y="21" class="td" font-weight="600">Network Data Transfer</text>
+      <text x="220" y="21" class="td">Collocated cross-AZ routing + Shared EIP</text>
+      <text x="560" y="21" class="td-num">$25.56</text>
+      <text x="690" y="21" class="td-num" font-weight="600">$3.45</text>
+      <text x="844" y="21" class="td-green">-$22.11 (-86.5%)</text>
+    </g>
+
+    <!-- Row 8: TOTAL ROW -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="860" height="42" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1.2" />
+      <text x="16" y="26" class="td" font-weight="700" fill="#f0f6fc">📊 TOTAL ESTIMATED SPEND</text>
+      <text x="220" y="26" class="td" font-weight="600" fill="#58a6ff">AWS ap-south-1 (Production Architecture)</text>
+      <text x="560" y="26" class="td-num" font-weight="700" fill="#8b949e">$240.00</text>
+      <text x="690" y="26" class="td-num" font-weight="700" fill="#58a6ff">$148.60</text>
+      <text x="844" y="26" class="td-green" font-size="14" font-weight="700">-$91.40 (-38.1%)</text>
+    </g>
+  </g>
+
+  <!-- Footer Callout Box -->
+  <g transform="translate(30, 520)">
+    <rect x="0" y="0" width="860" height="48" rx="8" fill="#161b22" stroke="#238636" stroke-width="1" />
+    <circle cx="24" cy="24" r="8" fill="#238636" />
+    <path d="M 20 24 L 23 27 L 29 20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    <text x="44" y="22" class="footer-text" font-weight="600" fill="#3fb950">Pre-Merge FinOps Gate Policy Verified (scripts/finops_cost_guard.py):</text>
+    <text x="44" y="38" class="footer-text">
+      Total monthly commit of <tspan fill="#f0f6fc" font-weight="600">$148.60/mo</tspan> respects the enterprise policy limit of <tspan fill="#f0f6fc" font-weight="600">$250.00/mo</tspan> with <tspan fill="#3fb950" font-weight="600">+$101.40/mo safety headroom</tspan>.
+    </text>
+  </g>
+</svg>

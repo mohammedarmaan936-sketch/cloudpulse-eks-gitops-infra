@@ -30,6 +30,21 @@ jobs:
         working-directory: terraform
         run: terraform validate
 
+  finops-cost-governance:
+    name: FinOps Cost Governance (Infracost Policy Gate)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run FinOps Cost-Governance Guard
+        run: python3 scripts/finops_cost_guard.py
+
   trivy-iac-security:
     name: Trivy IaC & Manifest Security Scan
     runs-on: ubuntu-latest
